@@ -9,7 +9,7 @@ export default class List {
 
   get Template() {
     return /*html*/ `
-    <div class="col-3 border border-white rounded shadow-lg m-5">
+    <div class="col-md-3 col-sm-12 border border-white rounded shadow-lg m-5">
         <h1 class="text-white">${this.name} <button class="text-white close mt-3" onclick="app.listController.deleteId('${this.id}')"><span>&times;</span></button></h1>
         <form onsubmit="app.taskController.createTask(event, '${this.id}')">
           <div class="form-group">
