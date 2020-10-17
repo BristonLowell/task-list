@@ -1,4 +1,4 @@
 .background-image{
   background-image: url(cool.jpg);
-  background-size: contain;
+  background-size: cover;
 }
