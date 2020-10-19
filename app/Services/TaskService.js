@@ -1,7 +1,12 @@
 import Task from "../Models/Task.js";
 import { ProxyState } from "../AppState.js"
+import { loadState, saveState } from "../Utils/LocalStorage.js"
 //Public
 class TaskService {
+
+  constructor() {
+    ProxyState.on("tasks", saveState)
+  }
 
   deleteTask(id) {
     let temp = ProxyState.tasks

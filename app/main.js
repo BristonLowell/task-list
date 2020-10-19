@@ -1,5 +1,6 @@
 import ListController from "../app/Controllers/ListController.js"
 import TaskController from "../app/Controllers/TaskController.js"
+import { loadState } from "./Utils/LocalStorage.js";
 
 
 class App {
@@ -10,3 +11,4 @@ class App {
 }
 
 window["app"] = new App();
+loadState()
